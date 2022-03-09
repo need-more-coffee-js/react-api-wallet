@@ -1,0 +1,108 @@
+
+.coin-container{
+    display: flex;
+    justify-content: center;
+
+}
+.coin-row{
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid grey;
+    width: 900px;
+
+}
+.coin{
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width: 300px;
+}
+.coin h1{
+    font-size: 20px;
+    width: 150px;
+}
+.coin img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.coin-symbol{
+    text-transform: uppercase;
+
+}
+.coin-symbol-modal{
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+.coin-data{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.coin-price{
+    width: 110px;
+    margin-right: 70px;
+}
+.coin-volume{
+    width: 220px;
+}
+
+.coin-marketcap{
+    width: 100px;
+    margin-right: 20px;
+}
+.coin-percent{
+    width: 100%;
+}
+.coin-balance{
+    padding-left: 70px;
+    color: purple;
+    justify-content: center;
+}
+.coin-balance-modal{
+    margin-left: 10px;
+}
+
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+
+.coin-text{
+    text-align: center;
+}
+.coin-search{
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+.coin-input{
+    width: 260px;
+}
+
+.balance-button{
+    font-size: 20px;
+    margin-left: 100px;
+}
+.current-data-time{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.export-button{
+    margin-top: 10px;
+    justify-content: center;
+    width: 270px;   
+}
+.button_balances{
+    margin-top: 10px;
+    justify-content: center;
+    width: 270px; 
+    height: 30px;
+}
