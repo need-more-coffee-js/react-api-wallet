@@ -3,10 +3,10 @@ import axios from 'axios';
 import Coin from "./Coin";
 import './Coin.css'
 import CurrentDateTime from "./CurrentData";
-import AsyncCSV from "./AsyncCSV";
 import Modal from "./Modal";
 import './Modal.css'
-import CoinBalance from "./CoinBalance";
+import GetApiBalance from "./ShowBal";
+import ExportToCsv from "./Export";
 
 
 function App() {
@@ -19,6 +19,7 @@ useEffect(() => {
   axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
   .then(res => {
     setCoins(res.data)
+
   }).catch(error => alert('ERROR'))
 }, []);
 
@@ -39,30 +40,24 @@ const filtredCoins = coins.filter(coin =>
             <input type="text" placeholder="SEARCH" className="coin-input" onChange={handleChange}/>
             <div className="current-data-time">
             < CurrentDateTime  />
+             
             <button className="button_balances" onClick={() => setModal({
               ...modal, modal1: false
             })}>
               Show Balances
             </button>
             </div>
+            
             <Modal 
+            
               isOpened={modal.modal1}
               title={'Balances'}
               onModalClose={() => setModal({...modal, modal1: false})}
               
             >
-              <CurrentDateTime/>
-              <AsyncCSV/>
-              {filtredCoins.map(coin => {
-                return <CoinBalance
-                key={coin.id}
-                name={coin.name} 
-                image={coin.image}
-                symbol={coin.symbol} 
-                balance={coin.high_24h}
-              />;
-          
-            })}
+            <CurrentDateTime/>
+            <ExportToCsv />
+            <GetApiBalance />
             
             </Modal>
             
