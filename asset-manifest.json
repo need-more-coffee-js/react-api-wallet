@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/apiwallet/static/css/main.aa3d14fc.css",
-    "main.js": "/apiwallet/static/js/main.106a053c.js",
-    "index.html": "/apiwallet/index.html",
-    "main.aa3d14fc.css.map": "/apiwallet/static/css/main.aa3d14fc.css.map",
-    "main.106a053c.js.map": "/apiwallet/static/js/main.106a053c.js.map"
+    "main.css": "/react-api-wallet/static/css/main.aa3d14fc.css",
+    "main.js": "/react-api-wallet/static/js/main.106a053c.js",
+    "index.html": "/react-api-wallet/index.html",
+    "main.aa3d14fc.css.map": "/react-api-wallet/static/css/main.aa3d14fc.css.map",
+    "main.106a053c.js.map": "/react-api-wallet/static/js/main.106a053c.js.map"
   },
   "entrypoints": [
     "static/css/main.aa3d14fc.css",
